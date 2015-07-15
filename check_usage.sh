@@ -10,5 +10,5 @@ used=$(df -h | grep $DISK | awk '{print $5}' | cut -d% -f1)
 
 if [ $used -gt 95 ]
 then
-    mail -s "Uso em ${used}%" $SEND_TO
+    echo "Tá quase lotado, véi!" | mail -s "Uso em ${used}%" $SEND_TO
 fi
