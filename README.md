@@ -15,3 +15,4 @@
 - `comando < entrada > saida`
 - `comando1 | comando2`
 
+### Comandos úteis
